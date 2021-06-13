@@ -39,7 +39,7 @@ a {
 
 /* ---------- HEADER ----------*/
 .header {
-	grid-area: header;
+	grid-area: aside;
 	padding: 1.25em;
 	color: rgb(255, 48, 96);
 	border: none;
