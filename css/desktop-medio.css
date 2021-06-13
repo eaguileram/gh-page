@@ -1,0 +1,38 @@
+/* desktop hasta 1050px */
+@media screen and (max-width: 1050px){
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		font-size: 16px;
+	}
+
+	.contenedor{
+		grid-template-areas:
+			'header			header   	header'
+			'destacado		destacado 	destacado'
+			'contenido		contenido 	contenido'
+			'aside			aside		aside'
+			'footer	 		footer 		footer';
+	}
+
+	.footer .glasses{
+		font-size: 1em;
+	}
+
+	.articulo.destacado .contenedor-thumbnail img{
+		border: none;
+		border-radius: 8px 0px 0px 8px;
+		-webkit-animation:mutilated 2.5s linear infinite;
+		-moz-animation:mutilated 2.5s linear infinite;
+		animation:mutilated 2.5s linear infinite;
+		transform: scaleX(.5);
+	}
+
+	@-moz-keyframes mutilated { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes mutilated { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes mutilated { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } 
+}

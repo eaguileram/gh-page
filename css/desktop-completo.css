@@ -1,0 +1,23 @@
+/* desktop hasta 1200px */
+@media screen and (max-width: 1200px){
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body{
+		font-size: 15px;
+	}
+
+	.footer .glasses{
+		font-size: 1em;
+	}
+
+	.articulo .contenedor-thumbnail{
+		border: none;
+		border-radius: 8px 0 0 8px;
+		max-height: 19.5em;
+		background-size:cover;
+	}
+}

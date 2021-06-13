@@ -1,0 +1,35 @@
+/* tablets hasta 768px */
+@media screen and (max-width: 768px){
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+
+	body{
+		font-size: 15px;
+	}
+
+	.articulo.destacado {
+		grid-template-columns: 1fr;
+	}
+
+	.articulo.destacado .contenedor-texto{
+		border-radius: 8px 8px 0px 0px;
+	}
+
+	.articulo.destacado .contenedor-thumbnail{
+		height: 16rem;
+	}	 
+
+	.articulo.articulo.destacado img {
+		border: none;
+		border-radius: 0 0 8px 8px;
+	}
+
+	.footer .glasses{
+		font-size: 1em;
+	}
+}
