@@ -2,9 +2,9 @@
 var men = document.getElementById('menu');
 // inserto los links del menú
 men.insertAdjacentHTML('beforeend', '\
-    <a href="/gh-page/">Inicio</a>\
-    <a href="/gh-page/acercade.html">Acerca de</a>\
-    <a href="/gh-page/contacto.html">Contacto</a>');
+    <a href="index.html">Inicio</a>\
+    <a href="acercade.html">Acerca de</a>\
+    <a href="contacto.html">Contacto</a>');
 
 function ValidarNombre() {
         var nombre = document.getElementById("nombre").value;
