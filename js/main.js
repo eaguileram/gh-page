@@ -93,7 +93,7 @@ function ValidarFormulario() {
     //evaluo mensaje
 
     if (mensaje.length < 10) {
-        document.getElementById("msgMensaje").innerText = "El mensaje debe terner mínimo 10 caracteres.";
+        document.getElementById("msgMensaje").innerText = "El mensaje debe tener mínimo 10 caracteres.";
     } else {
         document.getElementById("msgMensaje").innerText = "";
         datos["Mensajes"] = mensaje;
