@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<title>Contacto | Proyecto Final Desarrollo Web</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<!-- FUENTES -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -32,8 +34,8 @@
 					<h1>Contacto</h1>
 					<h1>Contacto</h1>
 					<!-- WEB DEVELOPER -->
-					<summary class="webdeveloper brpadding">
-						<a href="#ankG"><i class="fas fa-paper-plane code"></i></a>&nbsp;
+					<summary class="webdevelopercontacto brpadding">
+						<i class="fas fa-paper-plane js"></i>&nbsp;
 					</summary>
 				</div>
 				<!-- MENÚ DE NAVEGACIÓN -->
@@ -52,19 +54,37 @@
 					</h2>
 				</div>
 				<!-- EXTRACTO -->
-					<p class="extracto">
+					<p id="ft" class="extracto">
 						¡Nos vemos en JS Master!
 					</p>
-				<!-- AUTOR -->
-					<div class="author-row">
-						<a href="acercade.html" aria-label="Author página de E. A.">
-						<img alt="Avatar de E. A." src="img/t8.png" class="avatar"/></a>
-						<div>
-							<a class="author-name" href="acercade.html">
-							Eliezer Aguilera </a> el
-							<time datetime=""> 10 Jun, 2021 </time>
-						</div>
-					</div>
+					<p>
+						<h2 id="mrcpt" class="code">
+							¡Mensaje recibido con éxito! <i class="fas fa-heart heart"></i>
+						</h2>
+					</p>
+					<p>
+						<form id="form" action="" method="POST">
+								<label>Nombre</label>
+						
+								<input autocomplete="off" type="text" id="nombre" onchange="ValidarNombre()"/>
+								<p id="msgNombre" class="alerta"></p>
+						
+								<label>Email</label>
+						
+								<input type="email" id="correo" onchange="ValidarEmail()"/>
+								<p id="msgCorreo" class="alerta"> </p>
+						
+						
+								<label>Mensaje</label>
+								<textarea id="mensaje" onchange="ValidarMensaje()"></textarea>
+								<p id="msgMensaje" class="alerta"> </p>
+								<div>
+									<p id="msgGracias" class="agradecimiento"></p>
+								</div>
+								<button type="button" onclick="ValidarFormulario()">Enviar</button>
+						</form>
+					</p>
+					
 				</div>
 			</article>
 			</main>
